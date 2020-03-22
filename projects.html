@@ -3,30 +3,85 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="styleSmallScreen.css" />
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>MyPage</title>
   </head>
   <body>
   <div class="page">
-    <nav class="nav">
-      <a class="links" id="index" href="index.html">Home</a>
-      <a class="links" id="projects" href="projects.html">Projects</a>
-      <a class="links" id="resume" href="resume.html">Resume</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link left" href="index.html">Jonatan Buzek</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="projects.html">Projects</a>
+        <a class="nav-item nav-link" href="resume.html">Resume</a>
+      </div>
     </nav>
-    <div id="main"> 
-      <h2>Projects</h2>
-    </div>
-    <div class="contact">
-      <h2>Contact</h2>
-        <ul>
-          <li class="linkIcon">
-            <img src="media/GitHub-Mark-32px.png" alt="">
-          </li>
-          <li class="linkIcon">
-            <img src="media/email2.png" alt="">
-          </li>
-        </ul>
+    <div id="main_projects">
+      <h1 id="projects_title">Projects</h1>
+
+      <div class="projets">
+        <picture class="p_img">
+          <source media="(max-width: 480px)" srcset="">
+            <img src="media/hangman2.png" alt="website_screen_capture">
+        </picture>
+        <div class="p_descr">
+            <h2>React mini-projects</h2>
+            <a href="https://jonatanbzk.github.io/hangman/">github.io/hangman/</a> <br>
+            <a href="https://github.com/jonatanbzk/react_hangman_dev">gitHub repository</a>
+            <p class="p_text">I currently learn to use React. I put my mini-projects training here. <br>
+            The first one is a hangman game. The main feature works well, but the design should be improved. <br>
+            I also do a Simon memory game, coming soon.</p>
+        </div>
+      </div>
+
+      <div class="projets">
+        <picture class="p_img">
+          <source media="(max-width: 480px)" srcset="">
+            <img src="media/myowndictionary_m.png" alt="website_screen_capture">
+        </picture>
+        <div class="p_descr">
+            <h2>MyOwnDictionary</h2>
+            <a href="http://rbmk.fr/">www.rbmk.fr</a> <br>
+            <a href="https://github.com/jonatanbzk/myowndictionary_v1">gitHub repository</a>
+            <p class="p_text">MyOwnDictionary is a personal project. The goal was to give language learners a tool to create a list of unknown words and test their knowledge. <br>
+            First, you have to create a "dictionary" choosing two languages. Then you add the words and their translations. And finally, you can check your dictionary words list or test yourself.<br>
+            This was my first full-stack project. I built it from scratch using PHP (MVC pattern), MySql, HTML/CSS, and JavaScript.
+            The hosting part was on an AWS EC2 server and AWS RDS for the database. I used git and bitbucket for the versioning. <br>
+            The rest of the project is to rewrite it from scratch using Symfony.
+            </p>
+        </div>
+      </div>
+
+      <div class="projets">
+        <picture class="p_img">
+          <source media="(max-width: 480px)" srcset="">
+            <img src="media/nursing.png" alt="website_screen_capture">
+        </picture>
+        <div class="p_descr">
+            <h2>Nursing office landing page</h2>
+            <a href="http://www.cabinet-infirmier-lesarcs.fr/">cabinet-infirmier-lesarcs.fr</a>
+            <p class="p_text">Nursing office responsive one-page website.
+              <br>
+              As my first project, I decided to not use any library. I designed the website, coded it. I also managed the hosting part using OVH, add google analytics and managing the SEO. </p>
+        </div>
+      </div>
+
+      <div class="projets" id="p_template">
+        <picture class="p_img"> 300/420 px
+        </picture>
+        <div class="p_descr">
+            <h2>Title</h2>
+            <a href="#">Project link</a>
+            <p class="p_text">Project description</p>
+        </div>
+      </div>
+
     </div>
   </div>
   <script src="page.js"></script>

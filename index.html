@@ -3,26 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="styleSmallScreen.css" />
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>MyPage</title>
   </head>
   <body>
   <div class="page">
-    <nav class="nav">
-      <a class="links" id="index" href="index.html">Home</a>
-      <a class="links" id="projects" href="projects.html">Projects</a>
-      <a class="links" id="resume" href="resume.html">Resume</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link left" href="index.html">Jonatan Buzek</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="projects.html">Projects</a>
+        <a class="nav-item nav-link" href="resume.html">Resume</a>
+      </div>
     </nav>
-    <div id="main">
-      <img src="media/ivan.png" alt="">
-      <div class="">
+    <div id="main_idx">
+      <picture>
+        <source media="(max-width: 480px)" srcset="media/meSHsmall.png">
+          <img src="media/meSH.png" alt="man_picture">
+      </picture>
+      <div id="textBloc">
         <h1>Jonatan Buzek</h1>
+        <br>
         <p id="aboutMeTxt">
-            привет <br>
-            Welcome to my personnal webside, I am Ivan, from Russia. <br>
-            I enjoy drinking Vodka, building warBot, planning to kill Tony Stark and hiking. <br>
-            Be welcome my camarad to see my projects, and consider all kind of collaboration for work or political projects.
+          Hi, <br>
+          I’m Jonatan, a PHP web developer. <br>
+          I enjoy learning new IT skills, building, and understanding things. <br>
+          Ex senior building technician and then professional diver, I dive deep now in web projects mainly using PHP, Javascript, SQL, HTML, and CSS. I’m also open source enthusiast, and of course, Linux user.
+          <br>
+          Apart from coding, I enjoy hiking, workout, and martial arts. I always tried to push my limits and increase my knowledge through hard work.
+          <br>
+          See the <a href="projects.html">Projects</a> or <a href="resume.html">Resume</a> section for more info or contact me.
         </p>
       </div>
     </div>
@@ -30,10 +46,13 @@
       <h2>Contact</h2>
         <ul>
           <li class="linkIcon">
-            <img src="media/GitHub-Mark-32px.png" alt="">
+            <img src="media/in.png" alt="linkedin_icon">
           </li>
           <li class="linkIcon">
-            <img src="media/email2.png" alt="">
+            <a href="https://github.com/jonatanbzk" title="gitHub"><img src="media/GitHub-Mark-32px.png" alt="github_icon"></a>
+          </li>
+          <li class="linkIcon">
+            <img src="media/email.png" alt="email_icon">
           </li>
         </ul>
     </div>
