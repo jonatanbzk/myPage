@@ -1,0 +1,23 @@
+/* Index page */
+#main_idx {
+  width: 90%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#textBloc, #idx_img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#idx_img, #textBloc, #aboutMeTxt {
+  margin-top: 1em;
+}
+
+#idx_img {
+  margin-bottom: 4em;
+}
+
+#textBloc {
+  width: 90%;
+}

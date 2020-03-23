@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 800px)" href="styleSmallScreen.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="style_XL_Screen.css" />
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="style_L_Screen.css" />
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="style_M_Screen.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="style_S_Screen.css" />
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>MyPage</title>
@@ -23,10 +26,12 @@
       </div>
     </nav>
     <div id="main_idx">
-      <picture>
-        <source media="(max-width: 480px)" srcset="media/meSHsmall.png">
-          <img src="media/meSH.png" alt="man_picture">
-      </picture>
+      <div id="idx_img">
+        <picture>
+          <source media="" srcset="">
+            <img id="my_img" src="media/meSH.png" alt="man_picture">
+          </picture>
+      </div>
       <div id="textBloc">
         <h1>Jonatan Buzek</h1>
         <br>
