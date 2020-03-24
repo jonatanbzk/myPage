@@ -131,6 +131,7 @@ ul {
 }
 
 .projets {
+  height: auto;  /*  test */
   display: flex;
   flex-direction: row;
   padding: 1em;
@@ -161,6 +162,7 @@ h2 {
 
 .p_descr {
   width: 70%;
+  height: auto;   /*  test  */
 }
 
 .p_text {
