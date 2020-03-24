@@ -110,6 +110,10 @@ ul {
   margin-right: 1em;
 }
 
+#linkedin {
+  display: none;
+}
+
 /* Projects */
 #main_projects {
   height: 100%;
@@ -166,21 +170,17 @@ h2 {
   text-align: justify;
 }
 
-#p_template {
-  display: none;
-}
-
 /* resume */
-iframe {
-  height: 1200px;
-  width: 800px;
+#main_resume{
+    text-align: center;
 }
 
-#resume_link {
-  font-weight: bold;
-}
-
-#resume_link, #resume_iframe {
-  text-align: center;
+.resume_link {
   margin: 2em;
+}
+
+.pdfLink {
+  font-weight: bold;
+  position: relative;
+  top: -5em;
 }
