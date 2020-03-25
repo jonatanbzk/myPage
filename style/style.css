@@ -132,6 +132,7 @@ ul {
 
 .projets {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: row;
   padding: 1em;
   padding-top: 4em;
