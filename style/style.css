@@ -19,6 +19,10 @@ html, body {
 }
 
 /* navbar */
+.navbar {
+  flex: 0 0 auto;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: row;
